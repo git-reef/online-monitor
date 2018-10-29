@@ -1,0 +1,23 @@
+//水球动画
+@keyframes move_wave_left {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-352px) translateZ(0) scaleY(0.9)
+    }
+    100% {
+        transform: translateX(-704px) translateZ(0) scaleY(1)
+    }
+}
+@keyframes move_wave_right {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(352px) translateZ(0) scaleY(0.9)
+    }
+    100% {
+        transform: translateX(704px) translateZ(0) scaleY(1)
+    }
+}

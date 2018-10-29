@@ -1,0 +1,12 @@
+<div class="login-wrapper flex-center">
+	<div class="img-wrapper" ng-repeat="item in imgUrlList" ng-style="{'background': 'url(' + item + ') 50% 50%'}"></div>
+	<div class="info-box flex-center">
+		<div class="box">
+			<p>智慧水环境运营管理平台</p>
+			<label>
+				<input type="text" ng-keydown="loginIn($event)" ng-model="MN" placeholder="MN号：请输入MN号" id="input">
+				<span class="enter-block" ng-click="loginIn()"></span>
+			</label>
+		</div>
+	</div>
+</div>

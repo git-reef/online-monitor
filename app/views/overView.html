@@ -1,0 +1,136 @@
+<div class="over-view-wrapper">
+	
+	<div id="slide-wrapper">
+
+	    <!--<label for="sildeInput1" ng-click='clickWitch(0)'>1</label>
+	
+	    <label for="sildeInput2" ng-click="clickWitch(1)">2</label>
+	
+	    <label for="sildeInput3" ng-click="clickWitch(2)">3</label>-->
+		
+		
+	    <ul id="slide-ul">
+	        <li class="slide-block factor-monitor">
+	        	<div class="top-panel flex-center">
+					<div class="title-box">
+						实时监测数据
+					</div>
+					<div class="charts-content">
+						<div class="circle-wapper">
+							<div class="text-box">
+								<span>
+									实时水质状况
+								</span>
+								<span>
+									优
+								</span>
+							</div>
+							<div class="wave-inner">
+								<img class="waves wave-right" src="images/wave_1.png" style=" opacity: 0.7;transform:rotateY(180deg);"/>
+							</div>
+							<div class="wave-inner">
+								<img class="waves wave-left" src="images/wave_1.png"/>
+							</div>
+						</div>
+						<div class="circle-wapper">
+							<div class="text-box">
+								<span>
+									水质变化趋势
+								</span>
+								<span>
+									安全
+								</span>
+							</div>
+							<div class="wave-inner">
+								<img class="waves wave-right" src="images/wave_2.png" style=" opacity: 0.7;transform:rotateY(180deg);"/>
+							</div>
+							<div class="wave-inner">
+								<img class="waves wave-left" src="images/wave_2.png"/>
+							</div>
+						</div>
+						<div class="rect-wrapper" style="background-color: #4093f6;">
+							<div class="top-rect">
+								<img src="../images/fuhao.png" width="16"/>
+								<span>COD</span>
+								<span>28</span>
+							</div>
+							<div class="bottom-rect">
+								<p>实时采集数据：<span>{{ now | date:'HH:mm'}}</span></p>
+								<p>数据达标范围：<span> 0-40</span></p>
+							</div>
+						</div>
+						<div class="rect-wrapper" style="background-color: #5341ec; margin-right: -7%;">
+							<div class="top-rect">
+								<img src="../images/fuhao.png" width="16"/>
+								<span>氨氮</span>
+								<span>1.35</span>
+							</div>
+							<div class="bottom-rect">
+								<p>实时采集数据：<span>{{ now | date:'HH:mm'}}</span></p>
+								<p>数据达标范围：<span> 0-1.5</span></p>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="bottom-panel">
+					<div class="title-box">
+						48小时历史数据
+						<span class="title-disc">(更新时间 <span>{{lastTime}}</span> )</span>
+					</div>
+					<div class="charts-content" style="padding: 3% 1% 0;">
+						<div class="chart-line" id="chart-line-id"></div>
+					</div>
+				</div>
+	        </li>
+	        <li class="slide-block site-monitor">
+	        	<div class="site-top">
+	        		<div class="boxs-wrapper">
+		        		<div class="rect-box">
+		        			<p class="text-p">站点编号：<span class="text-span">test9527</span></p>
+		        			<p class="text-p">断面情况：<span class="text-span">西湖入湖口</span></p>
+		        		</div>
+		        		<div class="rect-box">
+		        			<p class="text-p">站点运维负责人：&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-span">孙高飞</span></p>
+		        			<p class="text-p">门禁最后开门时间：<span class="text-span" style="letter-spacing: 4px;">13:52:26</span></p>
+		        		</div>
+		        		<div class="rect-box">
+		        			<p class="text-p">站房内温度：<span class="text-span">26</span><span>℃</span></p>
+		        			<p class="text-p">站房内湿度：<span class="text-span">40</span><span>%</span></p>
+		        		</div>
+		        		<div class="rect-box">
+		        			<p class="text-p">系统状态：<span class="text-span">自动运行</span></p>
+		        			<p class="text-p">系统步骤：<span class="text-span">仪表分析</span></p>
+		        		</div>
+	        		</div>
+	        	</div>
+	        	<div class="site-bottom">
+	        		<div class="site-box">
+		        		<div class="title-box">
+							运行示意图
+						</div>
+						<div class="window-info">
+							<p class="text-p"><a class="text-a">站点运维计划:</a><span class="text-span">更换试剂、清洗管路、更换试剂、清洗管路</span></p>
+							<p class="text-p"><a class="text-a">任务类型:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><span class="text-span">周期性任务</span></p>
+							<p class="text-p"><a class="text-a">上次执行时间:</a><span class="text-span">2018-08-26</span>
+								<a class="float-a">下次执行时间:<span class="">2018-08-30</span></a>
+							</p>
+						</div>
+	        		</div>
+	        	</div>
+	        </li>
+	        <!--<li class="slide-block" style="background: peru;"></li>-->
+	    </ul>
+	
+	
+		<div class="slide-mark flex-center">
+			<span ng-style="{'background': currentIndex == 0 ? '#4093f6' : '#d7d7d7'}"></span>
+			<span ng-style="{'background': currentIndex == 1 ? '#4093f6' : '#d7d7d7'}"></span>
+			<!--<span ng-style="{'background': currentIndex == 2 ? '#4093f6' : '#d7d7d7'}"></span>-->
+		</div>
+	
+	</div>
+	
+	
+	
+</div> 
